@@ -1,0 +1,151 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(213, 53%, 93%);
+  font-family: "Karla", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  line-height: 2em;
+}
+
+.container {
+  margin: 30px auto;
+  max-width: 700px;
+  overflow: hidden;
+}
+
+/* The first paragraph starts here */
+.first-pag {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+
+.pag1 {
+  color: rgb(42,178,193);
+  font-size: 16px;
+  font-weight: bolder;
+}
+
+.pag2 {
+  color: rgb(192,223,52);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+.pag3 {
+  color: rgb(152, 166, 189);
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+/* Code for grid both second and third pag starts here */
+.Grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+}
+
+/* Second paragraph starts here */
+.second-pag {
+  max-width: 350px;
+  background-color: rgb(31,152,150);
+  padding: 40px 50px;
+  border-radius: 0 0 0px 10px;
+}
+
+.line1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bolder;
+  margin-bottom: 13px;
+}
+
+.line2 {
+  font-size: 30px;
+  color: white;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.second-pag span {
+  font-size: 17px;
+  color: rgb(152,166,180);
+  vertical-align: middle;
+  margin-left: 10px;
+}
+
+.line3 {
+  color: rgb(229,239,241);
+  font-weight: bolder;
+  font-size: 15px;
+  margin-bottom: 35px;
+}
+
+.second-pag button {
+  background-color: rgb(192,223,52);
+  padding: 15px;
+  width: 100%;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
+}
+
+.second-pag button:hover {
+  background-color: rgb(147, 174, 27);
+}
+
+/* Third paragraph starts here */
+.third-pag {
+  width: 350px;
+  background-color: rgb(42,178,175);
+  padding: 40px 50px;
+  border-radius: 0 0 10px 0px;
+}
+
+.p1 {
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.p2 {
+  color: rgb(229,239,241);
+  font-weight: bold;
+  font-size: 16.2px;
+  line-height: 1.3em;
+}
+
+@media only screen and (max-width:700px) {
+  .Grid {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+  }
+
+  .first-pag {
+    max-width: 350px;
+  }
+
+  .second-pag {
+    border-bottom-left-radius: 0;
+  }
+}
